@@ -1,0 +1,25 @@
+.table {
+  overflow-x: auto;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    th,
+    td {
+      padding: 8px;
+      border-bottom: 1px solid $color-secondary;
+      text-align: left;
+    }
+    thead {
+      th {
+        border-bottom: 2px solid $color-secondary;
+      }
+    }
+    td.empty-table {
+      text-align: center;
+      padding: 20px 0;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+}

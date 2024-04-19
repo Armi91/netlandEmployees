@@ -1,0 +1,15 @@
+<div class="container">
+  <nav class="tabs">
+    <a
+      class="tab"
+      routerLink="/add-employee"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Nowy pracownik</a
+    >
+    <a class="tab" routerLink="/employee-list" routerLinkActive="active"
+      >Lista pracowników</a
+    >
+  </nav>
+  <router-outlet></router-outlet>
+</div>

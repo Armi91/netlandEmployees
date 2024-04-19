@@ -1,0 +1,41 @@
+.action-buttons {
+  width: 130px;
+  min-width: 130px;
+}
+.table {
+  .btn {
+    display: none;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  tr:hover {
+    .btn {
+      display: inline-block;
+    }
+  }
+  tbody {
+    td {
+      cursor: pointer;
+    }
+  }
+}
+
+.table-edit-form {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8px;
+    img {
+      width: 16px;
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
