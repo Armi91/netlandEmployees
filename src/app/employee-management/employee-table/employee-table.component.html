@@ -25,18 +25,12 @@
                 [(ngModel)]="tempEditValue"
                 required
               />
-              <div class="table-edit-form__buttons">
-                <img
-                  src="../../../assets/accept.svg"
-                  alt=""
-                  (click)="saveEdit(i, 'name')"
-                />
-                <img
-                  src="../../../assets/cancel.svg"
-                  alt=""
-                  (click)="cancelEdit(i, 'name')"
-                />
-              </div>
+              <app-table-edit-buttons
+                [employeeInd]="i"
+                [field]="'name'"
+                (saveEdit)="saveEdit(i, 'name')"
+                (cancelEdit)="cancelEdit(i, 'name')"
+              ></app-table-edit-buttons>
             </div>
           </ng-template>
         </td>
@@ -55,18 +49,12 @@
                 required
                 min="18"
               />
-              <div class="table-edit-form__buttons">
-                <img
-                  src="../../../assets/accept.svg"
-                  alt=""
-                  (click)="saveEdit(i, 'age')"
-                />
-                <img
-                  src="../../../assets/cancel.svg"
-                  alt=""
-                  (click)="cancelEdit(i, 'age')"
-                />
-              </div>
+              <app-table-edit-buttons
+                [employeeInd]="i"
+                [field]="'name'"
+                (saveEdit)="saveEdit(i, 'age')"
+                (cancelEdit)="cancelEdit(i, 'age')"
+              ></app-table-edit-buttons>
             </div>
           </ng-template>
         </td>
@@ -83,18 +71,12 @@
                 class="form-control"
                 [(ngModel)]="tempEditValue"
               />
-              <div class="table-edit-form__buttons">
-                <img
-                  src="../../../assets/accept.svg"
-                  alt=""
-                  (click)="saveEdit(i, 'isFullTime')"
-                />
-                <img
-                  src="../../../assets/cancel.svg"
-                  alt=""
-                  (click)="cancelEdit(i, 'isFullTime')"
-                />
-              </div>
+              <app-table-edit-buttons
+                [employeeInd]="i"
+                [field]="'name'"
+                (saveEdit)="saveEdit(i, 'isFullTime')"
+                (cancelEdit)="cancelEdit(i, 'isFullTime')"
+              ></app-table-edit-buttons>
             </div>
           </ng-template>
         </td>
@@ -115,18 +97,12 @@
                   {{ position.value }}
                 </option>
               </select>
-              <div class="table-edit-form__buttons">
-                <img
-                  src="../../../assets/accept.svg"
-                  alt=""
-                  (click)="saveEdit(i, 'position')"
-                />
-                <img
-                  src="../../../assets/cancel.svg"
-                  alt=""
-                  (click)="cancelEdit(i, 'position')"
-                />
-              </div>
+              <app-table-edit-buttons
+                [employeeInd]="i"
+                [field]="'name'"
+                (saveEdit)="saveEdit(i, 'position')"
+                (cancelEdit)="cancelEdit(i, 'position')"
+              ></app-table-edit-buttons>
             </div>
           </ng-template>
         </td>

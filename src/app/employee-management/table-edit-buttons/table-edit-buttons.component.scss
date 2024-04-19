@@ -1,0 +1,14 @@
+.table-edit-form {
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8px;
+    img {
+      width: 16px;
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
